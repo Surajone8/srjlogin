@@ -1,0 +1,205 @@
+.home-cont {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("https://demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/layer_01.png"); */
+    background-image: url("../images//layer_01.png");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+
+}
+
+.carousel-btn {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.648);
+    background-position: center;
+    /* object-fit: contain; */
+    background-size: contain;
+    transition: all 0.5s linear;
+    /* background-image: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: white;
+}
+
+.carousel-btn2 {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.648);
+    background-position: center;
+    /* object-fit: contain; */
+    background-size: contain;
+    transition: all 0.5s linear;
+    /* background-image: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: white;
+}
+
+
+.ball {
+    width: 50em;
+    height: 50em;
+    background-color: #00d084;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2em;
+    position: relative;
+}
+
+.ball-images {
+    width: 60em;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.grid-dots {
+    /* width: 30em; */
+    height: 35em;
+    aspect-ratio: 1;
+    object-fit: contain;
+    position: absolute;
+    top: 5%;
+    right: -40%;
+}
+
+.sneaker {
+    z-index: 10;
+    height: 55em;
+    aspect-ratio: 1;
+    object-fit: contain;
+    animation: shoe 0.5s linear;
+}
+
+@keyframes shoe {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.title {
+    font-size: 2.5em;
+    color: white;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    right: -40%;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.5em;
+}
+
+
+@media(max-width: 1641px) {
+    .ball {
+        width: 40em;
+        height: 40em;
+    }
+
+    .sneaker {
+        z-index: 10;
+        height: 45em;
+        aspect-ratio: 1;
+        object-fit: contain;
+        animation: shoe 0.4s linear;
+    }
+
+    .grid-dots {
+        /* width: 30em; */
+        height: 25em;
+        aspect-ratio: 1;
+        object-fit: contain;
+        position: absolute;
+        top: 5%;
+        right: -40%;
+    }
+
+    .title {
+        font-size: 2em;
+        color: white;
+        z-index: 10;
+        position: absolute;
+        top: 30%;
+        right: -40%;
+        font-weight: 400;
+        line-height: 200%;
+        letter-spacing: 0.3em;
+    }
+
+    .home-cont {
+        height: 70vh;
+        width: 100%;
+        /* background-image: url("https://demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/layer_01.png"); */
+        background-image: url(http://localhost:3000/static/media/layer_01.d158c5e74bd45d5abba7.png);
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 1300px) {
+    .grid-dots {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+}
+
+
+@media(max-width: 990px) {
+    .ball {
+        width: 30em;
+        height: 30em;
+    }
+
+    .sneaker {
+        height: 35em;
+    }
+
+    .home-cont {
+        height: 55vh;
+        /* background-color: red; */
+    }
+}
+
+
+@media(max-width: 850px) {
+    .ball {
+        width: 25em;
+        height: 25em;
+    }
+
+    .sneaker {
+        height: 30em;
+    }
+}
